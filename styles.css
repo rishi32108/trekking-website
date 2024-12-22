@@ -1,0 +1,256 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif; /* Default Font */
+    margin: 0; /* Remove Default Margin */
+    padding: 0; /* Remove Default Padding */
+}
+
+/* Header Section Styling */
+.header {
+    background-color: #000000e5; /* Dark Green Background */
+    color: white; /* White Text Color */
+    padding: 10px 20px; /* Padding Around Content */
+    display: flex; /* Flexbox for Layout */
+    justify-content: space-between; /* Space Between Logo and Navigation */
+    align-items: center; /* Center Align Items */
+}
+
+/* Navigation Bar Styling */
+.nav ul {
+    list-style: none; /* Remove Bullet Points */
+    margin: 0; /* Remove Default Margin */
+    padding: 0; /* Remove Default Padding */
+    display: flex; /* Horizontal Menu */
+}
+
+.nav ul li {
+    margin-left: 20px; /* Space Between Menu Items */
+}
+
+.nav ul li a {
+    color: white; /* White Text for Links */
+    text-decoration: none; /* Remove Underline from Links */
+}
+
+
+/* Home Section Styling */
+.banner {
+    background-color: #001f3f; /* Dark Blue Background */
+    color: white; /* White Text Color */
+    text-align: center; /* Center Align Text */
+    padding: 250px 20px; /* Vertical and Horizontal Padding */
+}
+
+.banner h2 {
+    font-size: 2.5em; /* Large Heading Size */
+    margin-bottom: 10px; /* Space Below Heading */
+}
+
+.banner .btn {
+    padding: 10px 20px; /* Padding for Button */
+    background-color: #044700; /* Dark Green Background for Button */
+    color: white; /* White Text Color */
+    text-decoration: none; /* Remove Underline */
+    border-radius: 5px; /* Rounded Corners */
+    font-weight: bold; /* Make Menu Items Bold */
+}
+
+/* Section Styling */
+.section {
+    padding: 50px 20px; /* Section Padding */
+    text-align: center; /* Center Align Text */
+}
+
+/* Upcoming Adventures Section */
+#upcoming {
+    background-color: #001f3f; /* Dark Blue Background */
+    color: white; /* White Text Color */
+    padding: 120px 20px; /* Vertical and Horizontal Padding */
+}
+/* Upcoming Adventures Heading */
+#upcoming h2 {
+    font-size: 2.5em; /* Increased font size */
+    margin-top: -50px; /* Move the heading upwards by 50px */
+}
+
+
+
+/* Cards Container Styling */
+.cards {
+    display: flex; /* Flex Layout */
+    justify-content: space-around; /* Space Between Cards */
+    flex-wrap: wrap; /* Wrap Cards on Smaller Screens */
+}
+
+/* Individual Card Styling */
+.card {
+    width: 30%; /* Card Width */
+    background-color: #00000000; /* Black Background */
+    margin: 0px; /* Space Around Cards */
+    padding: 10px; /* Padding Inside Card */
+    border-radius: 0px; /* Rounded Corners */
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0); /* Shadow for Depth */
+    text-align: center; /* Center Align Text */
+}
+
+.card img {
+    width: 100%; /* Full Width Image */
+    border-radius: 5px; /* Rounded Image Corners */
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333; /* Dark Gray Background */
+    color: white; /* White Text Color */
+    text-align: center; /* Center Align Text */
+    padding: 10px 0; /* Padding Inside Footer */
+}
+
+/* Divider Styling Between Home and Upcoming */
+.divider {
+    height: 5px; /* Thickness of the Divider */
+    background-color: #000; /* Dark Black Color */
+    margin: 0; /* Remove Default Margin */
+    border: none; /* No Border */
+}
+
+/* Gallery Section Styling */
+#gallery {
+    background-color: #001f3f; /* Dark Blue Background */
+    color: white; /* White Text for Texts */
+    padding: 50px 20px; /* Padding for Spacing */
+    text-align: center; /* Center Align Text */
+    padding: 200px 20px; /* Vertical and Horizontal Padding */
+}
+
+/* Gallery Section Heading */
+#gallery h2 {
+    font-size: 3.125em; /* Increased font size */
+    margin-top: -100px; /* Remove space above the heading */
+}
+
+/* Gallery Section Description */
+#gallery p {
+    font-size: 1.5em; /* Increase the size of the description text */
+    margin-top: 10px; /* Add a small space between heading and description */
+}
+
+
+/* Navigation Bar Styling */
+.nav {
+    padding: 10px 20px; /* Padding Inside Menu */
+    display: flex; /* Align Menu Items Horizontally */
+}
+
+/* Navigation List Styling */
+.nav ul {
+    list-style: none; /* Remove Bullet Points */
+    margin: 0; /* Remove Default Margin */
+    padding: 0; /* Remove Default Padding */
+    display: flex; /* Horizontal Layout */
+}
+
+/* Menu Item Styling */
+.nav ul li {
+    margin-left: 20px; /* Space Between Menu Items */
+}
+
+/* Menu Link Box Styling */
+.nav ul li a {
+    display: block; /* Convert Links into Block Elements */
+    padding: 10px 20px; /* Padding Inside Each Box */
+    background-color: #000000; /* Dark Green Background for Each Box */
+    color: white; /* White Text for Links */
+    text-decoration: none; /* Remove Underline */
+    border-radius: 10px; /* Slightly Curved Corners for Each Box */
+    transition: background-color 0.3s ease; /* Smooth Transition for Hover Effect */
+    font-weight: bold; /* Make Menu Items Bold */
+}
+
+/* Hover Effect on Menu Links */
+.nav ul li a:hover {
+    background-color: #4b4b4bc9; /* Darker Green on Hover */
+}
+
+
+
+
+/* Home Section Styling */
+.banner {
+    position: relative; /* Relative positioning to add overlay */
+    background-image: url('images/home-bg.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the full area */
+    background-position: center; /* Centers the image */
+    height: 25vh; /* Full height of the viewport */
+    color: white; /* White Text Color */
+    text-align: center; /* Center Align Text */
+    z-index: 1; /* Ensure it's below the overlay */
+}
+
+/* Overlay for Light Dark Shade */
+.banner::after {
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Black background with 30% opacity for dark shade */
+    z-index: 2; /* Ensure it's above the image but below text */
+}
+
+/* Banner Text Styling */
+.banner h2 {
+    font-size: 2.5em; /* Large Heading Size */
+    margin-bottom: 10px; /* Space Below Heading */
+    position: relative; /* Position relative to stay above overlay */
+    z-index: 3; /* Ensure text is above the overlay */
+}
+
+.banner .btn {
+    padding: 10px 20px; /* Padding for Button */
+    background-color: #044700; /* Dark Green Background for Button */
+    color: white; /* White Text Color */
+    text-decoration: none; /* Remove Underline */
+    border-radius: 5px; /* Rounded Corners */
+    font-weight: bold; /* Make Menu Items Bold */
+    position: relative; /* Position relative to stay above overlay */
+    z-index: 3; /* Ensure button is above the overlay */
+}
+
+
+
+
+/* Banner Button Styling */
+.banner .btn {
+    padding: 10px 20px; /* Padding for Button */
+    background-color: transparent; /* Transparent Background */
+    color: white; /* White Text Color */
+    border: 0.5px solid white; /* White Border */
+    text-decoration: none; /* Remove Underline */
+    border-radius: 5px; /* Rounded Corners */
+    font-weight: bold; /* Make Text Bold */
+    position: relative; /* Ensure the button is above the overlay */
+    z-index: 3; /* Ensure button is above the overlay */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect for the Button */
+.banner .btn:hover {
+    background-color: white; /* White Background on Hover */
+    color: #001f3f; /* Change Text Color to Dark Blue */
+    border-color: #001f3f; /* Dark Blue Border on Hover */
+}
+
+/* UPCOMING IMAGES*/
+/*Adjustments*/
+
+
+
+/* Upcoming Adventures Image Styling */
+.upcoming-img {
+    width: 100%; /* Set width to 100% to make it responsive */
+    max-width: 250px; /* Reduce the maximum width */
+    height: 300px; /* Maintain the aspect ratio */
+}
+
