@@ -147,7 +147,7 @@ img {
 /* Gallery Section Styling */
 #gallery {
     background-color: #001f3f; /* Dark Blue Background */
-    color: white; /* White Text for Texts */
+    color: rgb(255, 255, 255); /* White Text for Texts */
     padding: 50px 20px; /* Padding for Spacing */
     text-align: center; /* Center Align Text */
     padding: 200px 20px; /* Vertical and Horizontal Padding */
@@ -266,4 +266,273 @@ img {
     .footer {
         font-size: 1em; /* Smaller font size for footer */
     }
+}
+
+
+/* CSS for smooth scrolling and layout */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Section Styles */
+main {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#details img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Screenshot Section */
+#screenshots {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.screenshot {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Google Form Button */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Smooth Scrolling Delay (Visual Transition) */
+html {
+    scroll-behavior: smooth;
+}
+
+.menu-link {
+    cursor: pointer;
+}
+
+
+
+
+
+
+/*mobile*/
+
+/* CSS for smooth scrolling, layout, and responsive menu */
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Desktop Menu Styles */
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700; /* Gold color on hover */
+}
+
+/* Responsive Menu for Mobile */
+.mobile-menu {
+    display: none;
+    position: relative;
+}
+
+.mobile-menu button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.mobile-menu button:hover {
+    background-color: #0056b3;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: #007BFF;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.mobile-menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.mobile-menu ul li a:hover {
+    background-color: #0056b3;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+/* Section Styles */
+main {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#details img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Screenshot Section */
+#screenshots {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.screenshot {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Google Form Button */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.menu-link {
+    cursor: pointer;
 }
